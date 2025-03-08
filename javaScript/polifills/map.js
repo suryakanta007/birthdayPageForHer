@@ -90,11 +90,11 @@ Object.defineProperty(Array.prototype,"myLength",{
 
 
 console.log(arr.myLength)
-Function.prototype.describe = function(){
-    console.log(`Function name is ${this.name}`)
-}
+// Function.prototype.describe = function(){
+//     console.log(`Function name is ${this.name}`)
+// }
 
-function greet(name){
-    return `Hello ${name}`
-}
-greet.describe();
+// function greet(name){
+//     return `Hello ${name}`
+// }
+// greet.describe();
