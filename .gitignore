@@ -1,0 +1,42 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Distribution / build
+dist/
+build/
+.rpt2_cache/
+.next/
+.nuxt/
+
+# Test results
+coverage/
+test_results/
+
+# Optional files
+.env
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Linux
+*.seed
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
