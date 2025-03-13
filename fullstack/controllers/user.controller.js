@@ -111,6 +111,9 @@ const userVerify = async (req,res)=>{
 }
 
 
+const userLogin  = async (req,res)=>{
+    console.log("login feature coming soon.");
+    res.json({message:"login feature coming soon"})
+}
 
-
-export { registerUser , userVerify}
+export { registerUser , userVerify, userLogin}
