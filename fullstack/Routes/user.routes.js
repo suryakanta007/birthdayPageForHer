@@ -1,9 +1,10 @@
 import express from "express"
-import { registerUser } from "../controllers/user.controller.js";
+import { registerUser , userVerify } from "../controllers/user.controller.js";
 
 const router = express.Router();
 
-router.get("/register",registerUser)
+router.post("/register",registerUser)
+router.get("/verify/:token",userVerify)
 
 
 

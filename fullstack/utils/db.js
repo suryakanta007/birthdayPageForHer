@@ -9,7 +9,7 @@ const db = ()=>{
         console.log("MongoDB connected.")
     })
     .catch((err)=>{
-        console.log("Error in conneting the mongoDB.")
+        console.log("Error in conneting the mongoDB.",err)
     })
 }
 
