@@ -22,7 +22,8 @@ coverage/
 test_results/
 
 # Optional files
-.env
+
+*.env 
 .vscode/
 *.swp
 *.swo
