@@ -1,6 +1,7 @@
 import User from "../models/User.model.js"
 import crypto from "crypto";
 import nodemailer from "nodemailer"
+import  bcrypt from "bcryptjs"
 const registerUser = async (req, res) => {
     // get data
     // validate
@@ -21,7 +22,7 @@ const registerUser = async (req, res) => {
     try {
         let isUserPresent = await User.findOne({ email });
         if (isUserPresent !== null) {
-            return req.status(400).json({
+            return res.status(400).json({
                 mesaage: "User is already present."
             })
         }
@@ -112,8 +113,28 @@ const userVerify = async (req,res)=>{
 
 
 const userLogin  = async (req,res)=>{
-    console.log("login feature coming soon.");
-    res.json({message:"login feature coming soon"})
+    const {email,password} = req.body
+    if(!email||!password){
+        return res.status(400).json({
+            message:"All the fields are required."
+        })
+    }
+    try {
+       const user =  await User.findOne({email})
+       if(!user){
+        return res.status(400).json({
+            message:"Invalid email or password"
+        })
+       }
+       const isPasswordCorrect = await bcrypt.compare(password,user.password);
+       if(!isPasswordCorrect){
+
+       }
+    } catch (error) {
+        return res.status(400).json({
+            message:"Invalid email or password"
+        })
+    }
 }
 
 export { registerUser , userVerify, userLogin}
