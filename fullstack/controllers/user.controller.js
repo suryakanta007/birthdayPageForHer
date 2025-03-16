@@ -2,6 +2,7 @@ import User from "../models/User.model.js"
 import crypto from "crypto";
 import nodemailer from "nodemailer"
 import  bcrypt from "bcryptjs"
+import jwt from "jsonwebtoken"
 const registerUser = async (req, res) => {
     // get data
     // validate
@@ -126,13 +127,45 @@ const userLogin  = async (req,res)=>{
             message:"Invalid email or password"
         })
        }
-       const isPasswordCorrect = await bcrypt.compare(password,user.password);
-       if(!isPasswordCorrect){
-
+       if(user.isverified === false){
+        return res.status(400).json({
+            message:"Please verify your email."
+        })
        }
-    } catch (error) {
+       
+       const isPasswordCorrect = await bcrypt.compare(password,user.password);
+       
+
+       if(!isPasswordCorrect){
         return res.status(400).json({
             message:"Invalid email or password"
+        })
+       }
+       
+       const token = jwt.sign({id:user._id},"shhhhh",{
+        expiresIn:"24h"
+       })
+       const cookesOptions = {
+        httpOnly: true,
+        secure:true,
+        maxAge:24*60*60*1000
+      }
+
+       res.cookie("token",token,cookesOptions);
+      
+       res.status(200).json({
+        success:true,
+        message:"Login successful",
+        token,
+        user : {
+            id:user._id,
+            name:user.name,
+            role:user.role
+        }
+       })
+    } catch (error) {
+        return res.status(500).json({
+            message:"internal error while login :- " + error
         })
     }
 }
