@@ -8,7 +8,8 @@ router.get("/verify/:token",userVerify);
 router.post("/login" , userLogin);
 router.get("/me",isLogedIn,getMe);
 router.get("/logout",isLogedIn,logoutUser);
-
+router.post("/forgetpassword",forgotPassword);
+router.post("/resetpassword/:token",resetPassword);
 
 
 
