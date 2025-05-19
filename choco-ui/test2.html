@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #D1F8EF;
+        }
+        .pricing-toggle-bg {
+            background-color: #A1E3F9;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(54, 116, 181, 0.2);
+        }
+    </style>
+</head>
+<body class="py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl font-bold text-[#3674B5] mb-3">Pricing</h1>
+            <h2 class="text-xl text-[#578FCA] mb-4">Pricing that grows with you</h2>
+            <p class="max-w-2xl mx-auto text-[#3674B5]/90">
+                Choose an affordable plan that's packed with the best features for engaging your audience, 
+                creating customer loyalty, and driving sales.
+            </p>
+        </div>
+
+        <!-- Toggle -->
+        <div class="flex justify-center mb-12">
+            <div class="inline-flex rounded-full p-1 pricing-toggle-bg">
+                <button class="px-6 py-2 rounded-full font-medium text-white bg-[#3674B5]">
+                    Monthly
+                </button>
+                <button class="px-6 py-2 rounded-full font-medium text-[#3674B5]">
+                    Annually <span class="text-[#578FCA]">(Save 20%)</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <!-- Hobby Plan -->
+            <div class="pricing-card bg-white rounded-xl p-6 transition-all duration-300 border border-[#A1E3F9]/50">
+                <h3 class="text-xl font-semibold text-[#3674B5] mb-2">Hobby</h3>
+                <p class="text-[#578FCA] mb-4">The essentials to provide your best work for clients.</p>
+                <div class="mb-6">
+                    <span class="text-3xl font-bold text-[#3674B5]">$19</span>
+                    <span class="text-[#578FCA]">/month</span>
+                </div>
+                <button class="w-full py-2 px-4 bg-[#A1E3F9] hover:bg-[#578FCA] text-[#3674B5] hover:text-white rounded-lg font-medium transition-colors duration-200 mb-6">
+                    Buy plan
+                </button>
+                <ul class="space-y-3">
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        5 products
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Up to 1,000 subscribers
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Basic analytics
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Freelancer Plan -->
+            <div class="pricing-card bg-white rounded-xl p-6 transition-all duration-300 border border-[#A1E3F9]/50">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#3674B5] mb-2">Freelancer</h3>
+                        <p class="text-[#578FCA] mb-4">The essentials to provide your best work for clients.</p>
+                    </div>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#A1E3F9] text-[#3674B5]">
+                        Popular
+                    </span>
+                </div>
+                <div class="mb-6">
+                    <span class="text-3xl font-bold text-[#3674B5]">$29</span>
+                    <span class="text-[#578FCA]">/month</span>
+                </div>
+                <button class="w-full py-2 px-4 bg-[#3674B5] hover:bg-[#2a5a94] text-white rounded-lg font-medium transition-colors duration-200 mb-6">
+                    Buy plan
+                </button>
+                <ul class="space-y-3">
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        5 products
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Up to 1,000 subscribers
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Basic analytics
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        48-hour support response time
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Startup Plan -->
+            <div class="pricing-card bg-white rounded-xl p-6 transition-all duration-300 border border-[#A1E3F9]/50">
+                <h3 class="text-xl font-semibold text-[#3674B5] mb-2">Startup</h3>
+                <p class="text-[#578FCA] mb-4">A plan that scales with your rapidly growing business.</p>
+                <div class="mb-6">
+                    <span class="text-3xl font-bold text-[#3674B5]">$59</span>
+                    <span class="text-[#578FCA]">/month</span>
+                </div>
+                <button class="w-full py-2 px-4 bg-[#A1E3F9] hover:bg-[#578FCA] text-[#3674B5] hover:text-white rounded-lg font-medium transition-colors duration-200 mb-6">
+                    Buy plan
+                </button>
+                <ul class="space-y-3">
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        25 products
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Up to 10,000 subscribers
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Advanced analytics
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        24-hour support response time
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Marketing automations
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card bg-white rounded-xl p-6 transition-all duration-300 border border-[#A1E3F9]/50">
+                <h3 class="text-xl font-semibold text-[#3674B5] mb-2">Enterprise</h3>
+                <p class="text-[#578FCA] mb-4">Dedicated support and infrastructure for your company.</p>
+                <div class="mb-6">
+                    <span class="text-3xl font-bold text-[#3674B5]">$99</span>
+                    <span class="text-[#578FCA]">/month</span>
+                </div>
+                <button class="w-full py-2 px-4 bg-[#A1E3F9] hover:bg-[#578FCA] text-[#3674B5] hover:text-white rounded-lg font-medium transition-colors duration-200 mb-6">
+                    Buy plan
+                </button>
+                <ul class="space-y-3">
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Unlimited products
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Unlimited subscribers
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Advanced analytics
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        1-hour, dedicated support response time
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Marketing automations
+                    </li>
+                    <li class="flex items-center text-[#3674B5]">
+                        <svg class="w-5 h-5 mr-2 text-[#578FCA]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Custom reporting tools
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

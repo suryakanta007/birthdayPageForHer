@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { ChevronDown } from 'lucide-react'
 
 const HeroSection = () => {
   return (
@@ -38,7 +39,7 @@ const HeroSection = () => {
         transition={{ delay: 1 }}
         className="text-xl md:text-2xl text-romantic-400 italic"
       >
-        Dear, Madamji you are always be the one girl ,I would like to with.
+        Dear Madamji, you will always be the one girl I would like to be with.
       </motion.p>
 
       <motion.div
@@ -53,6 +54,21 @@ const HeroSection = () => {
         className="mt-8 text-5xl"
       >
         ❤️
+      </motion.div>
+      <motion.div
+        animate={{
+          y: [0, 10, 0],
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          repeatType: "reverse",
+        }}
+        className="absolute bottom-8 text-romantic-400 flex flex-col items-center gap-2"
+        onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
+      >
+        <span className="text-sm">Scroll down for more</span>
+        <ChevronDown className="w-6 h-6 animate-bounce" />
       </motion.div>
     </motion.section>
   )

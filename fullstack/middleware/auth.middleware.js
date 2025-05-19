@@ -24,5 +24,4 @@ export const isLogedIn = async (req,res,next)=>{
         })
         
     }
-    next();
 }

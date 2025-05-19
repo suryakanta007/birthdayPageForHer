@@ -8,7 +8,7 @@ const MusicPlayer = () => {
 
   useEffect(() => {
     // Replace this URL with your actual music file
-    audioRef.current = new Audio('../src/assets/audio/audio1.mp3')
+    audioRef.current = new Audio('/src/assets/audio/audio1.mp3')
     audioRef.current.loop = true
   }, [])
 

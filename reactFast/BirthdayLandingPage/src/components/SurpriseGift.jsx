@@ -65,7 +65,7 @@ const SurpriseGift = () => {
                   A Special Message For You
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Bike is Already Register hochukaa hai ,Kab Fule daaloge? ❤️
+                  Bike tho Already Register hochukaa hai ,Kab Fuel daaloge? ❤️
                 </p>
                 <img
                   src="../src/assets/images/image6.jpeg"

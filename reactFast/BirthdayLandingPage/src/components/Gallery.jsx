@@ -3,12 +3,12 @@ import { motion } from 'framer-motion'
 const Gallery = () => {
   // Replace these with actual image URLs when available
   const images = [
-    { url: '../src/assets/images/image1.jpeg', caption: 'Your beautiful smile' },
-    { url: '../src/assets/images/image5.jpeg', caption: 'Your graceful presence' },
-    { url: '../src/assets/images/image7.jpeg', caption: 'Your kind heart' },
-    { url: '../src/assets/images/image3.jpeg', caption: 'Your amazing style' },
-    { url: '../src/assets/images/image2.jpeg', caption: 'Your elegant charm' },
-    { url: '../src/assets/images/image4.jpeg', caption: 'Your radiant beauty' },
+    { url: '/src/assets/images/image1.jpeg', caption: 'Your beautiful smile' },
+    { url: '/src/assets/images/image5.jpeg', caption: 'Your graceful presence' },
+    { url: '/src/assets/images/image7.jpeg', caption: 'Your kind heart' },
+    { url: '/src/assets/images/image3.jpeg', caption: 'Your amazing style' },
+    { url: '/src/assets/images/image2.jpeg', caption: 'Your elegant charm' },
+    { url: '/src/assets/images/image4.jpeg', caption: 'Your radiant beauty' },
   ]
 
   return (

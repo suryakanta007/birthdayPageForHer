@@ -67,7 +67,7 @@ const registerUser = async (req, res) => {
         let options = {
             from: process.env.MYMAIL ,// sender address
             to: newUser.email, // list of receivers
-            subject: "Register successfully.", // Subject line
+            subject: "Register successfully. complete your verfication.", // Subject line
             text:`Please click on the following link:
       ${process.env.BASE_URL}/api/v1/users/verify/${token}
       `, // plain text body
