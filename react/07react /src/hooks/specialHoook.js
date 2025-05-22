@@ -15,12 +15,15 @@ export default function useSpcialHook() {
             return res.json()
         })
         .then((data)=>{
-            console.log(data)
             setDog(data.data)
             setLoding(false)
         })
         .catch((err)=>{
             setError(err);
+
+
+
+            
         })
     }, [])
 
